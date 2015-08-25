@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html ng-app="mgharbi" ng-controller="MainController as main">
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>mgharbi | home</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- <script src="js/vendor/modernizr&#45;2.8.3.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/main.ctrl.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class='col-md-2'>
+                <img class="img-thumbnail" alt="Portrait" data-at2x="img/portrait@2x.jpg" id="profile-pic" src="img/portrait@2x.jpg">
+            </div>
+            <div class='col-md-10'>
+                <h1>{{main.firstname}} {{main.lastname}}</h1>
+                <p>PhD candidate - MIT CSAIL</p>
+                <a href='mailto:gharbi@mit.edu'>gharbi@mit.edu</a>
+                <address>
+                    MIT Stata Center<br>
+                    Office 32-D412<br>
+                    <a href="http://goo.gl/maps/SWm8h">32, Vassar Street</a><br>
+                    Cambridge MA 02139<br>
+                    +1 (857)-210-9559<br>
+                </address>
+            </div>
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            <a class="navbar-brand" href="#">Brand</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+
+        </nav>
+        <!-- <div class="input&#45;group"> -->
+        <!--     <span class="input&#45;group&#45;addon"> -->
+        <!--         <span class="glyphicon glyphicon&#45;search"></span> -->
+        <!--     </span> -->
+        <!--     <input type="text" class="form&#45;control" ng&#45;model="main.searchInput"> -->
+        <!-- </div> -->
+        <!-- <p>{{main.searchInput}}</p> -->
+        <!-- <ul class="list&#45;group"> -->
+        <!--     <li class="list&#45;group&#45;item" ng&#45;repeat="show in main.shows | filter:main.searchInput | orderBy:main.order.key:main.order.reverse"><span class="glyphicon glyphicon&#45;star" ng&#45;if="show.favorite"></span> {{show.title}} <span class="badge">{{show.year}}</span></li> -->
+        <!-- </ul> -->
+        <!-- <select class="form&#45;control pull&#45;right" ng&#45;model="main.order" ng&#45;options="order as order.title for order in main.orders"></select> -->
+        <!--  -->
+        <!-- <div class="clearfix"></div> -->
+        <!-- <h3>Add a new TV Show</h3> -->
+        <!-- <form name="main.addForm" class="form" ng&#45;submit="main.addShow()"> -->
+        <!--     <div class="form&#45;group"> -->
+        <!--         <label>Title</label> -->
+        <!--         <input type="text" class="form&#45;control" ng&#45;model="main.new.title" required /> -->
+        <!--     </div> -->
+        <!--     <div class="form&#45;group"> -->
+        <!--         <label>Year</label> -->
+        <!--         <input type="number" min="1900" max="2030" class="form&#45;control" ng&#45;model="main.new.year" required /> -->
+        <!--     </div> -->
+        <!--     <div class="row"> -->
+        <!--         <div class="col&#45;xs&#45;6"> -->
+        <!--             <label>Favorite: <input type="checkbox" ng&#45;model="main.new.favorite" /></label> -->
+        <!--         </div> -->
+        <!--         <div class="col&#45;xs&#45;6"> -->
+        <!--             <button class="btn btn&#45;success pull&#45;right"><span class="glyphicon glyphicon&#45;plus&#45;sign"></span> Add</button> -->
+        <!--         </div> -->
+        <!--     </div> -->
+        <!-- </form> -->
+            </div>
+</body>
+</html>
