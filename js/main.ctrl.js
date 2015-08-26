@@ -8,10 +8,3 @@ mgharbi_ctrl.controller("MainController", function() {
     vm.email     = "gharbi@mit.edu";
     vm.phone = "+1 (857)-210-9559";
 });
-
-mgharbi_ctrl.controller("NavController", function($scope, $location) {
-    var vm       = this;
-    vm.isActive = function (viewLocation) { 
-            return viewLocation === $location.path();
-    };
-});
