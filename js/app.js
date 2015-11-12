@@ -23,7 +23,9 @@ mgharbi_app.config(
                 redirectTo: ''
             });
 
-        $locationProvider.html5Mode(true);
+        $locationProvider.html5Mode({
+            enabled: true
+        });
 });
 
 $(document).ready(function() {
