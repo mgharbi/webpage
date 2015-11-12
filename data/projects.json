@@ -1,0 +1,17 @@
+[
+    {
+        "title": "A Gaussian Approximation of Feature Space for Fast Image Similarity",
+        "authors": [
+            {
+                "firstname": "Michael",
+                "lastname": "Gharbi",
+                "email": "gharbi@mit.edu",
+                "webpage": "www.mgharbi.com"
+            }
+        ],
+        "abstract": "We introduce a fast technique for the robust computation of image similarity. It builds on a re-interpretation of the recent exemplar-based SVM approach, where a linear SVM is trained at a query point and distance is computed as the dot product with the normal to the separating hyperplane. Although exemplar-based SVM is slow because it requires a new training for each exemplar, the latter approach has shown robustness for image retrieval and object classification, yielding state-of- the-art performance on the PASCAL VOC 2007 detection task despite its simplicity. We re-interpret it by viewing the SVM between a single point and the set of negative examples as the computation of the tangent to the manifold of images at the query. We show that, in a high-dimensional space such as that of image features, all points tend to lie at the periphery and that they are usually separable from the rest of the set. We then use a simple Gaussian approximation to the set of all images in feature space, and fit it by computing the covariance matrix on a large training set. Given the covariance matrix, the computation of the tangent or normal at a point is straightforward and is a simple multiplication by the inverse covariance. This allows us to dramatically speed up image retrieval tasks, going from more than ten minutes to a single second. We further show that our approach is equivalent to feature-space whitening and has links to image saliency.",
+        "pdf_link": "",
+        "code_link": "",
+        "bibtex": ""
+    }
+]
