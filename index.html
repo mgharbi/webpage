@@ -48,10 +48,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <!-- <li data&#45;match&#45;route="/$"><a href="#/projects">research<span class="sr&#45;only">(current)</span></a></li> -->
-                    <!-- <li data&#45;match&#45;route="/bio"><a href="#/bio">bio<span class="sr&#45;only">(current)</span></a></li> -->
-                    <!-- <li data&#45;match&#45;route="/resume"><a href="#/resume">resume<span class="sr&#45;only">(current)</span></a></li> -->
-                    <!-- <li><a href="">photo<span class="sr&#45;only">(current)</span></a></li> -->
+                    <li data-match-route="/bio"><a href="#/bio">home<span class="sr-only">(current)</span></a></li>
+                    <li data-match-route="/$"><a href="data/resume.pdf">resume<span class="sr-only">(current)</span></a></li>
+                    <li><a href="" target="_blank">photography<span class="sr-only">(current)</span></a></li>
+                    <!-- <li><a href="https://www.vernissage&#45;indigenous.com" target="_blank">photography<span class="sr&#45;only">(current)</span></a></li> -->
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div>
@@ -79,32 +79,57 @@
                     </div>
                     <div class='col-md-4 col-md-offset-1'>
                         <div valss="vcard">
-                            <ul class='list-unstyled'>
-                                <li>
-                                    <i class="glyphicon glyphicon-envelope"></i> <a href='mailto:{{main.email}}'>{{main.email}}</a>
-                                </li>
-                                <li>
-                                    <i class="glyphicon glyphicon-phone"></i> {{main.phone}}
-                                </li>
-                                <li>
-                                    <i class="glyphicon glyphicon-map-marker"></i> <a href="{{main.map}}">MIT Stata Center, Office 32-D412
-                                        32 Vassar Street, Cambridge MA 02139</a>
-                                </li>
-                            </ul>
-                            <ul class='list-inline'>
-                                <li>
-                                    <a href='{{main.facebook}}' target="_blank"><i class="fa fa-facebook-square"></i></a> 
-                                </li>
-                                <li>
-                                    <a href='{{main.twitter}}' target="_blank"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href='{{main.linkedin}}' target="_blank"><i class="fa fa-linkedin"></i></a>
-                                </li>
-                                <li>
-                                    <a href='{{main.github}}' target="_blank"><i class="fa fa-code-fork"></i></a>
-                                </li>
-                            </ul>
+                            <table class="table table-sm">
+                                <tr>
+                                    <th class='col-md-1'>
+                                        <i class="glyphicon glyphicon-envelope"></i>
+                                    </th>
+                                    <td>
+                                        <a href='mailto:{{main.email}}'>{{main.email}}</a>
+                                        <!-- <i class="glyphicon glyphicon&#45;phone"></i> {{main.phone}} -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class='col-md-1'>
+                                        <i class="glyphicon glyphicon-phone"></i> 
+                                    </th>
+                                    <td>
+                                        {{main.phone}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class='col-md-1'>
+                                        <i class="glyphicon glyphicon-map-marker"></i> 
+                                    </th>
+                                    <td>
+                                        <a href="{{main.map}}">MIT Stata Center, Office 32-D412
+                                        <br/>32 Vassar Street, Cambridge MA 02139</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-1">
+                                    </td>
+                                    <td>
+                                        <ul class='list-inline'>
+                                            <li>
+                                                <a href='data/resume.pdf' target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href='{{main.facebook}}' target="_blank"><i class="fa fa-facebook-square"></i></a> 
+                                            </li>
+                                            <li>
+                                                <a href='{{main.twitter}}' target="_blank"><i class="fa fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href='{{main.linkedin}}' target="_blank"><i class="fa fa-linkedin"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href='{{main.github}}' target="_blank"><i class="fa fa-code-fork"></i></a>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -124,6 +149,99 @@
             <div class="col-md-8 col-md-offset-2">
                 <ul class="list-unstyled">
                     <li>
+                      <h4>
+                            Differentiable Programming for Image Processing and Deep Learning in Halide
+                            </br>
+                            <small>
+                                Tzu-Mao Li,
+                                Micha&euml;l Gharbi,
+                                Andrew Adams,
+                                Fr&eacute;do Durand
+                                Jonathan Ragan-Kelley,
+                                </br>
+                                Siggraph 2018
+                                </br>
+                            </small>
+                        </h4>
+                        <ul class="list-inline">
+                            <li data-toggle="tooltip" data-placement="top" data-container="body" title="Project Homepage">
+                                <a href='https://people.csail.mit.edu/tzumao/gradient_halide/' alt="project home" target="_blank"><i class="fa fa-home"></i></a> 
+                            </li>
+                            <li data-toggle="tooltip" data-placement="top" data-container="body" title=".pdf">
+                                <a href='https://people.csail.mit.edu/tzumao/gradient_halide/gradient_halide.pdf' target="_blank"><i class="fa fa-file-pdf-o"></i></a> 
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>
+                            Convolutional Neural Network for Earthquake Detection and Location
+                            </br>
+                            <small>
+                                Thibaut Perol,
+                                Micha&euml;l Gharbi,
+                                Marine Denolle
+                                </br>
+                                Science Advances 2018
+                                </br>
+                            </small>
+                        </h4>
+                        <ul class="list-inline">
+                            <li data-toggle="tooltip" data-placement="top" data-container="body" title="Project Homepage">
+                                <a href='https://groups.csail.mit.edu/graphics/convnetquake/' alt="project home" target="_blank"><i class="fa fa-home"></i></a> 
+                            </li>
+                            <li data-toggle="tooltip" data-placement="top" data-container="body" title=".pdf">
+                                <a href='http://advances.sciencemag.org/content/4/2/e1700578/tab-pdf' target="_blank"><i class="fa fa-file-pdf-o"></i></a> 
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>
+                            Deep Bilateral Learning for Real-Time Image Enhancement
+                            </br>
+                            <small>
+                                Micha&euml;l Gharbi,
+                                Jiawen Chen,
+                                Jonathan T. Barron,
+                                Samuel W. Hasinoff,
+                                Fr&eacute;do Durand
+                                </br>
+                                Siggraph 2017
+                                </br>
+                            </small>
+                        </h4>
+                        <ul class="list-inline">
+                            <li data-toggle="tooltip" data-placement="top" data-container="body" title="Project Homepage">
+                                <a href='https://groups.csail.mit.edu/graphics/hdrnet/' alt="project home" target="_blank"><i class="fa fa-home"></i></a> 
+                            </li>
+                            <li data-toggle="tooltip" data-placement="top" data-container="body" title=".pdf">
+                                <a href='https://groups.csail.mit.edu/graphics/hdrnet/data/hdrnet.pdf' target="_blank"><i class="fa fa-file-pdf-o"></i></a> 
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>
+                            Deep Joint Demosaicking and Denoising
+                            </br>
+                            <small>
+                                Micha&euml;l Gharbi,
+                                Gaurav Chaurasia,
+                                Sylvain Paris,
+                                Fr&eacute;do Durand
+                                </br>
+                                Siggraph Asia 2016
+                                </br>
+                            </small>
+                        </h4>
+                        <ul class="list-inline">
+                            <li data-toggle="tooltip" data-placement="top" data-container="body" title="Project Homepage">
+                                <a href='https://groups.csail.mit.edu/graphics/demosaicnet/' alt="project home" target="_blank"><i class="fa fa-home"></i></a> 
+                            </li>
+                            <li data-toggle="tooltip" data-placement="top" data-container="body" title=".pdf">
+                                <a href='https://groups.csail.mit.edu/graphics/demosaicnet/data/demosaic.pdf' target="_blank"><i class="fa fa-file-pdf-o"></i></a> 
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
                         <h4>
                             Transform Recipes for Efficient Cloud Photo Enhancement
                             </br>
@@ -141,14 +259,11 @@
                         </h4>
                         <ul class="list-inline">
                             <li data-toggle="tooltip" data-placement="top" data-container="body" title="Project Homepage">
-                                <a href='http://people.csail.mit.edu/gharbi/xform_recipe/' alt="project home"><i class="fa fa-home"></i></a> 
+                                <a href='https://groups.csail.mit.edu/graphics/xform_recipes/' alt="project home" target="_blank"><i class="fa fa-home"></i></a> 
                             </li>
                             <li data-toggle="tooltip" data-placement="top" data-container="body" title=".pdf">
-                                <a href='http://people.csail.mit.edu/gharbi/xform_recipe/data/xform_paper_sigasia2015.pdf'><i class="fa fa-file-pdf-o"></i></a> 
+                                <a href='https://groups.csail.mit.edu/graphics/xform_recipes/data/xform_paper_sigasia2015.pdf' target="_blank"><i class="fa fa-file-pdf-o"></i></a> 
                             </li>
-                            <!-- <li data&#45;toggle="tooltip" data&#45;placement="top" data&#45;container="body" title="code"> -->
-                            <!--     <a href=''><i class="fa fa&#45;code&#45;fork"></i></a>  -->
-                            <!-- </li> -->
                         </ul>
                     </li>
                     <li>
@@ -165,8 +280,11 @@
                             </small>
                         </h4>
                         <ul class="list-inline">
+                            <li data-toggle="tooltip" data-placement="top" data-container="body" title="Project Homepage">
+                                <a href='https://groups.csail.mit.edu/graphics/gaussian_approximation/' alt="project home" target="_blank"><i class="fa fa-home"></i></a> 
+                            </li>
                             <li data-toggle="tooltip" data-placement="top" data-container="body" title=".pdf">
-                                <a href='http://dspace.mit.edu/bitstream/handle/1721.1/73685/MIT-CSAIL-TR-2012-032.pdf?sequence=1'><i class="fa fa-file-pdf-o"></i></a> 
+                                <a href='http://dspace.mit.edu/bitstream/handle/1721.1/73685/MIT-CSAIL-TR-2012-032.pdf?sequence=1' target="_blank"><i class="fa fa-file-pdf-o"></i></a> 
                             </li>
                         </ul>
                     </li>

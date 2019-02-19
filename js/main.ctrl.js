@@ -4,7 +4,7 @@ mgharbi_ctrl.controller("MainController",   ['$scope', 'Projects', function($sco
     var vm       = this;
     vm.firstname = "Michaël";
     vm.lastname  = "Gharbi";
-    vm.title     = "PhD candidate - MIT CSAIL";
+    vm.title     = "PhD student - MIT CSAIL";
     vm.email     = "gharbi@mit.edu";
     vm.phone     = "+1 (857)-210-9559";
     vm.github    = "https://github.com/mgharbi";
